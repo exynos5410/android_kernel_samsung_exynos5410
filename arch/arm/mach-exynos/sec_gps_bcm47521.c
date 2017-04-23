@@ -21,6 +21,7 @@
 
 #include <plat/gpio-cfg.h>
 
+#include <board-universal5410.h>
 
 #define IRQ_GPS_HOST_WAKE gpio_to_irq(GPIO_GPS_HOST_WAKE)
 
