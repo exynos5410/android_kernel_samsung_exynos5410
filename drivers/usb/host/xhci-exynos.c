@@ -79,7 +79,6 @@ static int exynos_xhci_suspend(struct device *dev)
 		return 0;
 	}
 #endif
-	retval = xhci_suspend(xhci);
 	if (retval < 0)
 		dev_err(dev, "%s: cannot stop xHC\n", __func__);
 
@@ -173,7 +172,6 @@ static int exynos_xhci_runtime_suspend(struct device *dev)
 		return -EAGAIN;
 	}
 
-	retval = xhci_suspend(xhci);
 	if (retval < 0)
 		dev_err(dev, "%s: cannot stop xHC\n", __func__);
 

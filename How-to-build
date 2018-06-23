@@ -1,0 +1,37 @@
+SmartPack Kernel project for LOS-14.1 based ROMs [Galaxy S4 Exynos5410]
+
+xda forum: https://forum.xda-developers.com/galaxy-s4/i9500-orig-develop/kernel-smartpack-project-lineage-os-14-t3590858
+
+
+Requirements:
+1. A 64 bit linux (I use ubuntu 16.04) system with required packages installed. For more details to setup the build environemnt, plz use this guide
+https://forum.xda-developers.com/android/software/guide-easy-kernel-building-tutorial-t3581057
+
+2. Source code
+https://github.com/sunilpaulmathew/SmartPack-Kernel-Project_S4
+
+3. Toolchain for building
+Downloading link: https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.zip
+
+4. Basic knowledge to use linux Terminal
+
+
+How-to-Build
+
+1. clone the source code to your build environemnt.
+open terminal and give the following command: "git clone -b jalte https://github.com/sunilpaulmathew/SmartPack-Kernel-Project_S4"
+
+2. Download toolchain from the above provided link and extract to your home folder (or any other folder).
+
+3. open "build_kernel.sh" from the source code root folder. Edit the "export CROSS_COMPILE=" with correct location to your toolchain.
+
+4. Go to the root directory of source code and open terminal
+
+5. Give the following commands 
+	a)	". build_SmartPack-ja3g.sh" (for building LOS and RR kernels for ja3g)
+	b)	". build_SmartPack-jalteskt.sh" (for building LOS kernel for jalteskt/jaltektt)
+	c)	". build_SmartPack-jaltelgt.sh" (for building LOS kernel for jaltelgt)
+		
+		and wait till building finishes. Everything is automated and you will get the builds in the folder "release_SmartPack" (You may modify the above mentioned building script appropriatley to meet your needs).
+
+6. Flash and enjoy
